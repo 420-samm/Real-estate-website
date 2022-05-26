@@ -1,0 +1,310 @@
+/* GENEREAL RESET; Resets the default Padding, Marging and border to 0 */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Sets Space Grotesk as the general font across the page and sets background color  */
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background: rgb(245, 245, 245);
+}
+
+/* Styling for the icons on the page; */
+i {
+    color: #0F298B;
+    padding: 5px 3px;
+}
+
+/* Set color for icons present inside a cta button to white because cta background is blue */
+.cta i {
+    color: #fff;
+}
+
+/* Styling for the header including logo and nav */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+header h1 {
+    font-size: 36px;
+    font-family: 'Oleo Script', cursive;
+    color: #000;
+}
+
+header ul {
+    display: flex;
+    align-items: flex-start;
+    gap: 42px;
+}
+
+header ul li {
+    list-style: none;
+    font-size: 18px;
+}
+
+.nav-link a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Makes the color of the active page on the nav link blue */
+.active a {
+    color: #0F298B;
+    font-weight: 600;
+}
+
+/* Styling for the buttons */
+.cta a {
+    color: #fff;
+    background: #2549D3;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+/* Styling for the hero page and Why choose us section of the page */
+section.hero,
+section.choose-us {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 50px 50px;
+}
+/* Hero text div contains all the texts of the hero section and the Learn More button */
+.hero-text {
+    padding: 20px;
+    width: 50%;
+}
+
+.hero-text h2 {
+    font-size: 52px;
+    color: #0F298B;
+    padding: 15px 0;
+}
+
+.hero-text p {
+    font-size: 24px;
+}
+
+.hero-img {
+    position: relative;
+}
+
+/* Set the width of the images in the hero section and WHY CHOOSE US page
+border-radius values give the curves of the top-right and bottom-left corner of the image */
+
+.hero-img img,
+.choose-img {
+    width: 500px;
+    border-radius: 0 150px;
+}
+
+/* Small circle on the bottom left corner of image in HERO section; made with  an empty div */
+.hero-img .small-circle {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 50px;
+    width: 50px;
+    background: #2549D3;
+    border-radius: 50%;
+    box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.25);
+}
+
+/* Sets margin below and above the 'Learn More' button in the HERO section */
+.hero .cta {
+    margin: 30px 0px;
+}
+
+/* Styling for the search bar immediately after the HERO section */
+.search-section{
+    width: 70%;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 24px 24px 48px 48px rgba(37, 73, 211, 0.05);
+}
+
+.search-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+    margin: 50px 0;
+}
+
+/* The SEARCH BAR was made with four unordered list spaced around using flexbox. First list contains 'Location and Lekki' second list contains 'Property Type and Duplex' etc.. */
+.search-flex ul li {
+    list-style: none;
+    color: #000;
+}
+
+/* Makes the First item in lists bolder and a different color */
+.search-flex ul li:first-of-type {
+    font-weight: 600;
+    color: #0F298B;
+}
+
+section.how-it-works {
+    text-align: center;
+    margin: 100px 0;
+}
+
+/* Styling the Header for Sections headers */
+section.how-it-works > h3,
+section.choose-us h3,
+section.featured-properties h3,
+section.testimonials h3 {
+    font-size: 34px;
+    font-weight: 600;
+    color: #0F298B;
+}
+
+section.how-it-works > p {
+    font-size: 22px;
+}
+
+/* Styling for the Three cards in the HOW IT WORKS SECTION */
+.card-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    width: 300px;
+    gap: 30px;
+    padding: 30px;
+    box-shadow: 5px 5px 48px 24px rgba(0, 0, 0, 0.06);
+}
+
+.card img {
+    height: 120px;
+}
+
+.choose-text > p {
+    padding: 20px 0;
+}
+
+/* GRID STYLING FOR THE GRID IN THE WHY CHOOSE US AND UNDER THE IMAGES IN THE FEATURED PROPERTIES */
+.choose-text .reasons,
+.properties-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.choose-text .reasons p,
+.comment .sub-text {
+    font-weight: 500;
+}
+
+.featured-properties,
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: fit-content;
+    margin: 150px auto;
+}
+
+.featured-properties .cta,
+.testimonials .cta {
+    font-family: 'Nunito', sans-serif;
+    align-self: self-end;
+}
+.properties-flex {
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+}
+
+.property img {
+    height: 200px;
+    border-radius: 0 80px 0 80px;
+}
+
+.properties-grid {
+    column-gap: 120px;
+    padding: 10px;
+    justify-self: center;
+}
+
+.properties-grid p {
+    font-size: 14px;
+}
+
+.property-amount {
+    font-weight: 600;
+    color: #0F298B;
+}
+.property {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 0 40px;
+}
+
+.comment-flex {
+    display: flex;
+    gap: 20px;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background: #0F298B;
+    color: #fff;
+    line-height: 33px;
+}
+
+footer h3 {
+    font-family: 'Oleo Script', cursive;
+    font-size: 32px;
+    padding: 20px 0;
+}
+
+footer h4 {  
+    font-size: 28px;
+    padding: 20px 0;
+}
+
+footer p {
+    max-width: 300px;
+    font-family: 'Nunito', sans-serif;
+}
+
+footer .others p {
+    opacity: 80%;
+}
